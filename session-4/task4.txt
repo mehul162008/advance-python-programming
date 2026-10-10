@@ -1,0 +1,19 @@
+The error is a NameError. It means that Python does not know what `InvalidSeatNumberError` is because this custom exception has not been defined before it is used.
+
+The error occurs on line 4 when the program tries to execute:
+
+`raise InvalidSeatNumberError('Seat number must be positive')`
+
+To fix this error, we need to create the custom exception class before using it:
+
+```python
+class InvalidSeatNumberError(Exception):
+    pass
+```
+
+After defining this class, Python will recognize `InvalidSeatNumberError`, and the program can raise the custom exception correctly.
+
+```
+
+Bas bhai, **Session 4 complete.** Session 5 bhej.
+```
